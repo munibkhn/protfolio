@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Muneeb Khan – Senior Laravel / Backend Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f3f6fb;--surface:#fff;--ink:#0f1b33;--muted:#53607a;--line:#d6deec;--accent:#123a8f;--accent-ink:#fff;--chip:#e3eafa;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0c1220;--surface:#131c30;--ink:#e6ecf8;--muted:#9aa8c4;--line:#243251;--accent:#8fb0ff;--accent-ink:#0c1220;--chip:#1b2744;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0c1220;--surface:#131c30;--ink:#e6ecf8;--muted:#9aa8c4;--line:#243251;--accent:#8fb0ff;--accent-ink:#0c1220;--chip:#1b2744;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 "Bricolage Grotesque",system-ui,-apple-system,"Segoe UI",sans-serif}
+a{color:var(--accent)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.wrap{max-width:960px;margin:0 auto;padding:0 22px}
+header.top{display:flex;justify-content:space-between;align-items:center;padding:20px 0}
+nav a{margin-left:18px;text-decoration:none;color:var(--muted);font-weight:600;font-size:15px}
+nav a:hover{color:var(--ink)}
+.hero{padding:56px 0 48px;border-bottom:1px solid var(--line)}
+h1{font-size:clamp(46px,9vw,96px);line-height:.95;margin:0 0 18px;font-weight:800;letter-spacing:-.03em}
+.role{font-size:clamp(20px,3vw,28px);font-weight:600;color:var(--accent);margin:0 0 18px}
+.lede{max-width:60ch;color:var(--muted);margin:0 0 28px}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:12px 20px;border-radius:8px;font-weight:600;text-decoration:none;border:2px solid var(--accent)}
+.btn.p{background:var(--accent);color:var(--accent-ink)}
+.versions{margin-top:44px}
+.versions p{margin:0 0 10px;color:var(--muted);font-size:15px}
+.vrow{display:flex;gap:8px;flex-wrap:wrap}
+.v{padding:8px 14px;border-radius:999px;background:var(--chip);font-weight:600;font-size:15px}
+.v.now{background:var(--accent);color:var(--accent-ink)}
+section{padding:56px 0;border-bottom:1px solid var(--line)}
+h2{font-size:clamp(28px,4vw,40px);margin:0 0 28px;letter-spacing:-.02em;line-height:1.1}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:26px}
+.skills h3{margin:0 0 8px;font-size:17px}
+.skills p{margin:0;color:var(--muted)}
+.job{display:grid;grid-template-columns:170px 1fr;gap:6px 28px;padding:22px 0;border-top:1px solid var(--line)}
+.job:first-of-type{border-top:0;padding-top:0}
+.when{color:var(--muted);font-size:15px}
+.job h3{margin:0;font-size:20px}
+.co{margin:0 0 8px;color:var(--muted)}
+.job ul{margin:0;padding-left:20px}
+.job li{margin-bottom:6px}
+.proj{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:16px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:20px;display:flex;flex-direction:column;gap:8px}
+.card h3{margin:0;font-size:18px}
+.card p{margin:0;color:var(--muted);font-size:15px;flex:1}
+.tag{align-self:flex-start;background:var(--chip);border-radius:6px;padding:3px 10px;font-size:13px;font-weight:600}
+.card a{font-weight:600;font-size:15px}
+.also{margin-top:22px;color:var(--muted);font-size:15px}
+.contact{border-bottom:0}
+.contact p{max-width:55ch;color:var(--muted)}
+footer{padding:26px 0 40px;color:var(--muted);font-size:14px}
+button.theme{background:none;border:1px solid var(--line);color:var(--ink);border-radius:8px;padding:6px 12px;font:inherit;font-size:14px;cursor:pointer}
+@media(max-width:640px){.job{grid-template-columns:1fr}nav{display:none}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="top">
+  <strong>Muneeb Khan</strong>
+  <nav><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#contact">Contact</a></nav>
+  <button class="theme" id="theme" type="button" aria-label="Switch colour theme">Theme</button>
+</header>
+
+<main>
+<div class="hero">
+  <h1>Muneeb<br>Khan</h1>
+  <p class="role">Senior Laravel / Backend Developer</p>
+  <p class="lede">I build scalable web apps, REST APIs and payment-integrated platforms with Laravel, MySQL and PostgreSQL. Over 5 years I’ve shipped LMS, ERP and CMS products for clients across India and abroad.</p>
+  <div class="btns">
+    <a class="btn p" href="mailto:muneebk405@gmail.com">Email me</a>
+    <a class="btn" href="#projects">See my projects</a>
+  </div>
+  <div class="versions">
+    <p>Laravel versions I’ve shipped on</p>
+    <div class="vrow"><span class="v">5</span><span class="v">7</span><span class="v">8</span><span class="v">9</span><span class="v">10</span><span class="v">11</span><span class="v now">12</span></div>
+  </div>
+</div>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="skills">
+    <div><h3>Backend</h3><p>PHP, Laravel 7–12, CodeIgniter, REST APIs, Eloquent, JetStream, role-based access control</p></div>
+    <div><h3>Databases</h3><p>MySQL, PostgreSQL, schema design and migrations</p></div>
+    <div><h3>Integrations</h3><p>Razorpay, PhonePe, Mailchimp, Google APIs, Spotify API, WebSockets, live chat</p></div>
+    <div><h3>Features</h3><p>PDF, Excel and CSV generation, barcodes, CKEditor, LMS, CMS, approval workflows</p></div>
+    <div><h3>Frontend</h3><p>HTML5, CSS3, JavaScript, jQuery, Bootstrap, React, WordPress, Shopify</p></div>
+    <div><h3>Tools</h3><p>Git, Cursor, VS Code, Linux, XAMPP, Canva</p></div>
+  </div>
+</section>
+
+<section id="experience">
+  <h2>Experience</h2>
+  <div class="job"><div class="when">Nov 2024 – Jul 2026</div><div>
+    <h3>Sr Software Developer</h3><p class="co">Trendsetterz IT Services Pvt. Ltd. · Remote</p>
+    <ul><li>Built an ERP and citizen application portal for Silvassa Smart City on Laravel 11/12, serving more than 1,000 users.</li>
+    <li>Integrated a payment gateway and built a hierarchical approval workflow for citizen applications.</li>
+    <li>Developed a project management module inside the ERP.</li></ul></div></div>
+  <div class="job"><div class="when">May 2024 – Nov 2024</div><div>
+    <h3>Sr Software Developer</h3><p class="co">Codify Brain · Noida</p>
+    <ul><li>Led development of a Laravel 11 LMS platform with real-time exam workflows.</li>
+    <li>Integrated PhonePe and Razorpay payment flows for course purchases, with robust error handling.</li>
+    <li>Followed Git branching and clean-code practices to ship features faster.</li></ul></div></div>
+  <div class="job"><div class="when">Apr 2023 – May 2024</div><div>
+    <h3>Backend Developer</h3><p class="co">Creative Nexus · Gurugram (Remote)</p>
+    <ul><li>Designed and tuned relational schemas across MySQL and PostgreSQL for production client applications.</li>
+    <li>Built secure REST APIs and third-party integrations (Mailchimp, Google APIs, WebSockets).</li></ul></div></div>
+  <div class="job"><div class="when">Jan 2023 – Mar 2023</div><div>
+    <h3>Backend Developer</h3><p class="co">Gonzo Technology · Lucknow (Remote)</p>
+    <ul><li>Built Laravel REST APIs for the service-executive app of an at-home salon platform: job assignment, booking status and service workflows.</li>
+    <li>Designed a customer referral system with codes, tracking and reward logic.</li>
+    <li>Delivered one API layer used by both the Android app and the web platform.</li></ul></div></div>
+  <div class="job"><div class="when">Jan 2022 – Jan 2023</div><div>
+    <h3>Laravel Developer</h3><p class="co">Bnext IT Solution · Noida (Remote)</p>
+    <ul><li>Built custom Laravel admin panels with JetStream authentication and role-based access control across client applications.</li>
+    <li>Integrated Razorpay and email notifications to streamline billing and onboarding.</li></ul></div></div>
+  <div class="job"><div class="when">Dec 2020 – Jan 2022</div><div>
+    <h3>Full Stack Web Developer</h3><p class="co">Techinspire · Saharanpur</p>
+    <ul><li>Developed responsive web applications and custom WordPress and Laravel systems for small and mid-size clients.</li>
+    <li>Maintained MySQL databases, wrote core PHP integrations and deployed sites on Linux hosting.</li></ul></div></div>
+  <p class="also">Education: Bachelor of Computer Application, CCSU (2017–2020)</p>
+</section>
+
+<section id="projects">
+  <h2>Selected projects</h2>
+  <div class="proj">
+    <div class="card"><span class="tag">Laravel 12</span><h3>Silvassa Smart City portal</h3><p>Online citizen application portal with payments and multi-level approvals.</p><a href="https://online.silvassasmartcity.com/" target="_blank" rel="noopener">Visit site</a></div>
+    <div class="card"><span class="tag">Laravel 11</span><h3>Silvassa Smart City ERP</h3><p>Internal ERP with a project management module.</p><a href="https://erp.silvassasmartcity.com/" target="_blank" rel="noopener">Visit site</a></div>
+    <div class="card"><span class="tag">Laravel 11</span><h3>QLMS</h3><p>Learning management system with exams and online course payments. Admin demo on request.</p><a href="https://qlms.codifybrain.com/login/" target="_blank" rel="noopener">Visit site</a></div>
+    <div class="card"><span class="tag">React</span><h3>Student QLMS</h3><p>Student-facing front end for the QLMS platform. Admin demo on request.</p><a href="https://student-qlms.codifybrain.com/" target="_blank" rel="noopener">Visit site</a></div>
+    <div class="card"><span class="tag">Laravel 12</span><h3>Memory Heroes</h3><p>Web application with an admin panel. Demo on request.</p><a href="https://memoryheroes.com/login" target="_blank" rel="noopener">Visit site</a></div>
+    <div class="card"><span class="tag">Laravel 12</span><h3>Little Thinker Olympiad</h3><p>Admin panel for an olympiad platform. Demo on request.</p><a href="https://admin.littlethinkerolympiad.com/" target="_blank" rel="noopener">Visit site</a></div>
+    <div class="card"><span class="tag">Laravel 9</span><h3>Local Finder</h3><p>Local business listing platform. Admin demo on request.</p><a href="https://localfinder.codifybrain.com/" target="_blank" rel="noopener">Visit site</a></div>
+    <div class="card"><span class="tag">WordPress + jQuery</span><h3>JRG Financial</h3><p>Finance website with an EMI calculator connected to an API.</p><a href="https://jrgfinancial.com/" target="_blank" rel="noopener">Visit site</a></div>
+    <div class="card"><span class="tag">Core PHP</span><h3>Fancypants</h3><p>Website connected to the Spotify API.</p><a href="https://fancypants.co.in/" target="_blank" rel="noopener">Visit site</a></div>
+  </div>
+  <p class="also">Also: Tiger Logistics (Core PHP), SEISD (Laravel 8), Crickbazi (Laravel 8), Mera Smart Shop (Laravel 7), Varmalaa (CodeIgniter), Dirty Good Co (Shopify), Calm Breaks (Core PHP).</p>
+</section>
+
+<section id="contact" class="contact">
+  <h2>Let’s work together</h2>
+  <p>I’m open to senior Laravel and backend roles, and to freelance projects. The quickest way to reach me is email.</p>
+  <div class="btns"><a class="btn p" href="mailto:muneebk405@gmail.com">muneebk405@gmail.com</a></div>
+</section>
+</main>
+<footer>© 2026 Muneeb Khan · Deoband, Uttar Pradesh, India</footer>
+</div>
+<script>
+(function(){
+  var b=document.getElementById("theme"),r=document.documentElement;
+  b.addEventListener("click",function(){
+    var dark=r.getAttribute("data-theme")==="dark"||(r.getAttribute("data-theme")!=="light"&&matchMedia("(prefers-color-scheme: dark)").matches);
+    r.setAttribute("data-theme",dark?"light":"dark");
+  });
+})();
+</script>
+</body>
+</html>
